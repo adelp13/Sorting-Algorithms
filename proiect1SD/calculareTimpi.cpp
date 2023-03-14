@@ -40,9 +40,9 @@ int main()
         clock_t time;
         time = clock();
 
-        quickSortMedian3(v, 1, N);
+        //quickSortMedian3(v, 1, N);
         //shellSort(v, N/2);
-        //stlSort(v);
+        stlSort(v);
         //countSort(v);
         //msort(v, 1, N);
         //radixSort(v, 0);
