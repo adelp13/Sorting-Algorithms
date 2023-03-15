@@ -2,23 +2,25 @@
 #include <cstdlib>
 #include <vector>
 #include <fstream>
-#include <iostream>
-#include <cstdlib>
-#include <vector>
 #include <ctime>
 #include <algorithm>
 using namespace std;
 
 ifstream in("tests.txt");
 const int NMAX = 100000000;
-short int v[1 + NMAX];
+short int v1[1 + NMAX], v2[1 + NMAX];
+const int EXP_MAX;
 int N = 100000000;
-short int maxValue;
+short int maxValue = 1000;
 const int exponent = 7;
 
-vector <short int> buckets[1 << exponent];
+vector <short int> buckets[1 << EXP_MAX];
 
 void radixSort(short int v[1 + NMAX], long long power){
+    if (maxValue > 32 767){
+        cout << "Algoritmul nu poate efectua sortarea ";
+        return;
+    }
     int stop = 0;
     for (int i = 1; i <= N; i++)
     {
@@ -53,40 +55,76 @@ bool sortedCheck(short int v[1 + NMAX])
     }
     return 1;
 }
+void copiere(int v[1 + NMAX])
+{
+    for (int i = 1; i <= N; i++)
+        v[i] = v1[i];
+}
 
 int main()
 {
-    ///T31
-    maxValue = 1000;
-    for (int i = 1; i <= N; i++)
-        v[i] = rand() % (maxValue + 1);
-    clock_t time;
+    for (int j = 1; j <= N; j++){
+            v1[j] = rand() % (maxValue + 1);
+    }
+
+    exponent = 7;
+    copiere(v2);
     time = clock();
-    radixSort(v, 0);
+    radixSort(v2, 0);
     time = clock() - time;
-    cout << "T31 N = " << N << " MAX = " << maxValue << " Timp: "
-    << float(time)/CLOCKS_PER_SEC << " sec ";
-
-
-    if (sortedCheck(v))
+    cout << "\tRADIX 2^7: ";
+    if (float(time)/CLOCKS_PER_SEC == 0)
+        cout << "sub 0.001 sec ";
+    else
+        cout << float(time)/CLOCKS_PER_SEC << " sec ";
+    if (sortedCheck(v2))
         cout << " Sortare reusita\n";
     else
-        cout << " Vectorul nu a putut fi sortat\n\n";
+        cout << " Vectorul nu a putut fi sortat\n";
 
-    ///T32
-    maxValue = 10000;
-    for (int i = 1; i <= N; i++)
-        v[i] = rand() % (maxValue + 1);
+    exponent = 10;
+    copiere(v2);
     time = clock();
-    radixSort(v, 0);
+    radixSort(v2, 0);
     time = clock() - time;
-    cout << "T32 N = " << N << " MAX = " << maxValue << " Timp: "
-    << float(time)/CLOCKS_PER_SEC << " sec ";
-
-
-    if (sortedCheck(v))
+    cout << "\tRADIX: 2^10:";
+    if (float(time)/CLOCKS_PER_SEC == 0)
+        cout << "sub 0.001 sec ";
+    else
+        cout << float(time)/CLOCKS_PER_SEC << " sec ";
+    if (sortedCheck(v2))
         cout << " Sortare reusita\n";
     else
-        cout << " Vectorul nu a putut fi sortat\n\n";
+        cout << " Vectorul nu a putut fi sortat\n";
+
+    exponent = 13;
+    copiere(v2);
+    time = clock();
+    radixSort(v2, 0);
+    time = clock() - time;
+    cout << "\tRADIX 2^13: ";
+    if (float(time)/CLOCKS_PER_SEC == 0)
+        cout << "sub 0.001 sec ";
+    else
+        cout << float(time)/CLOCKS_PER_SEC << " sec ";
+    if (sortedCheck(v2))
+        cout << " Sortare reusita\n";
+    else
+        cout << " Vectorul nu a putut fi sortat\n";
+
+    exponent = 16;
+    copiere(v2);
+    time = clock();
+    radixSort(v2, 0);
+    time = clock() - time;
+    cout << "\tRADIX 2^16: ";
+    if (float(time)/CLOCKS_PER_SEC == 0)
+        cout << "sub 0.001 sec ";
+    else
+        cout << float(time)/CLOCKS_PER_SEC << " sec ";
+    if (sortedCheck(v2))
+        cout << " Sortare reusita\n";
+    else
+        cout << " Vectorul nu a putut fi sortat\n";
     return 0;
 }

@@ -9,54 +9,170 @@ using namespace std;
 ifstream in("tests.txt");
 const int NMAX = 100000000;
 const int VAL_MAX = 100000000;
-int v[1 + NMAX], w[1 + NMAX], fr[VAL_MAX + 1];
+const int EXP_MAX = 16;
+int w[1 + NMAX], fr[VAL_MAX + 1];
+int v1[1 + NMAX], v2[1 + NMAX];
 int N, t, maxValue;
-const int exponent = 7;
-vector <int> buckets[1 << exponent];
 
-void shellSort(int v[1 + NMAX], int h);
+int exponent;
+vector <int> buckets[1 << EXP_MAX];
+bool sorted;
 
-void msort(int v[1 + NMAX], int left, int right);
-
-void countSort(int v[1 + NMAX]);
-
-void radixSort(int v[1 + NMAX], long long power);
-
-void quickSortMedian3(int v[1 + NMAX], int left, int right);
-
-void stlSort(int v[1 + NMAX]);
+void copiere(int v[1 + NMAX]);
 bool sortedCheck(int v[1 + NMAX]);
+void shellSort(int v[1 + NMAX], int h);
+void msort(int v[1 + NMAX], int left, int right);
+void countSort(int v[1 + NMAX]);
+void radixSort(int v[1 + NMAX], long long power);
+void quickSortMedian3(int v[1 + NMAX], int left, int right);
+void stlSort(int v[1 + NMAX]);
 
 int main()
 {
     in >> t;
+    cout << 1;
     for (int i = 0; i < t; i++)
-    //for (int i = 0; i < t - 2; i++) // for radix and quick
+    //for (int i = 0; i < t - 2; i++) // for radix
     {
+
         in >> N >> maxValue;
         //generate random vector
+
         for (int j = 1; j <= N; j++)
-            v[j] = rand() % (maxValue + 1);
+        {
+            v1[j] = rand() % (maxValue + 1);
+            v2[j] = v1[j];
+        }
+        cout << "T" << i + 1 << " N = " << N << " MAX = " << maxValue << ":\n";
+
         clock_t time;
         time = clock();
-
-        //quickSortMedian3(v, 1, N);
-        //shellSort(v, N/2);
-        stlSort(v);
-        //countSort(v);
-        //msort(v, 1, N);
-        //radixSort(v, 0);
+        stlSort(v2);
         time = clock() - time;
+        cout << "\tSTL: ";
+        if (float(time)/CLOCKS_PER_SEC == 0)
+            cout << "sub 0.001 sec\n";
+        else
+            cout << float(time)/CLOCKS_PER_SEC << " sec\n";
 
-        cout << "T" << i + 1 << " N = " << N << " MAX = " << maxValue << " Timp: ";
+        copiere(v2);
+        time = clock();
+        shellSort(v2, N/2);
+        time = clock() - time;
+        cout << "\tSHELL: ";
         if (float(time)/CLOCKS_PER_SEC == 0)
             cout << "sub 0.001 sec ";
         else
             cout << float(time)/CLOCKS_PER_SEC << " sec ";
-        if (sortedCheck(v))
+        if (sortedCheck(v2))
             cout << " Sortare reusita\n";
         else
-            cout << " Vectorul nu a putut fi sortat\n\n";
+            cout << " Vectorul nu a putut fi sortat\n";
+
+        copiere(v2);
+        time = clock();
+        quickSortMedian3(v2, 1, N);
+        time = clock() - time;
+        cout << "\tQUICK: ";
+        if (float(time)/CLOCKS_PER_SEC == 0)
+            cout << "sub 0.001 sec ";
+        else
+            cout << float(time)/CLOCKS_PER_SEC << " sec ";
+        if (sortedCheck(v2))
+            cout << " Sortare reusita\n";
+        else
+            cout << " Vectorul nu a putut fi sortat\n";
+
+        copiere(v2);
+        time = clock();
+        countSort(v2);
+        time = clock() - time;
+        cout << "\tCOUNT: ";
+        if (float(time)/CLOCKS_PER_SEC == 0)
+            cout << "sub 0.001 sec ";
+        else
+            cout << float(time)/CLOCKS_PER_SEC << " sec ";
+        if (sortedCheck(v2))
+            cout << " Sortare reusita\n";
+        else
+            cout << " Vectorul nu a putut fi sortat\n";
+
+        copiere(v2);
+        time = clock();
+        msort(v2, 1, N);
+        time = clock() - time;
+        cout << "\tMERGE: ";
+        if (float(time)/CLOCKS_PER_SEC == 0)
+            cout << "sub 0.001 sec ";
+        else
+            cout << float(time)/CLOCKS_PER_SEC << " sec ";
+        if (sortedCheck(v2))
+            cout << " Sortare reusita\n";
+        else
+            cout << " Vectorul nu a putut fi sortat\n";
+
+        if (N < 100000000)
+        {
+            exponent = 7;
+            copiere(v2);
+            time = clock();
+            radixSort(v2, 0);
+            time = clock() - time;
+            cout << "\tRADIX 2^7: ";
+            if (float(time)/CLOCKS_PER_SEC == 0)
+                cout << "sub 0.001 sec ";
+            else
+                cout << float(time)/CLOCKS_PER_SEC << " sec ";
+            if (sortedCheck(v2))
+                cout << " Sortare reusita\n";
+            else
+                cout << " Vectorul nu a putut fi sortat\n";
+
+            exponent = 10;
+            copiere(v2);
+            time = clock();
+            radixSort(v2, 0);
+            time = clock() - time;
+            cout << "\tRADIX: 2^10:";
+            if (float(time)/CLOCKS_PER_SEC == 0)
+                cout << "sub 0.001 sec ";
+            else
+                cout << float(time)/CLOCKS_PER_SEC << " sec ";
+            if (sortedCheck(v2))
+                cout << " Sortare reusita\n";
+            else
+                cout << " Vectorul nu a putut fi sortat\n";
+
+            exponent = 13;
+            copiere(v2);
+            time = clock();
+            radixSort(v2, 0);
+            time = clock() - time;
+            cout << "\tRADIX 2^13: ";
+            if (float(time)/CLOCKS_PER_SEC == 0)
+                cout << "sub 0.001 sec ";
+            else
+                cout << float(time)/CLOCKS_PER_SEC << " sec ";
+            if (sortedCheck(v2))
+                cout << " Sortare reusita\n";
+            else
+                cout << " Vectorul nu a putut fi sortat\n";
+
+            exponent = 16;
+            copiere(v2);
+            time = clock();
+            radixSort(v2, 0);
+            time = clock() - time;
+            cout << "\tRADIX 2^16: ";
+            if (float(time)/CLOCKS_PER_SEC == 0)
+                cout << "sub 0.001 sec ";
+            else
+                cout << float(time)/CLOCKS_PER_SEC << " sec ";
+            if (sortedCheck(v2))
+                cout << " Sortare reusita\n";
+            else
+                cout << " Vectorul nu a putut fi sortat\n";
+        }
     }
     return 0;
 }
@@ -92,17 +208,21 @@ void countSort(int v[1 + NMAX]){
     for(int i = 0; i < N; i++)
     {
         fr[v[i]]++;
-        if(v[i] >= maxVal)
-            maxVal = v[i];
+        if(v[i] >= maxValue)
+            maxValue = v[i];
     }
 
     int cnt = 0;
-    for(int i = 0; i <= maxVal; i++)
+    for(int i = 0; i <= maxValue; i++)
         for(int j = 1; j <= fr[i]; j++)
             v[++cnt] = i;
 }
 
 void radixSort(int v[1 + NMAX], long long power){
+    if (N > 10000000){
+        cout << "Algoritmul nu poate efectua sortarea ";
+        return;
+    }
     int stop = 0;
     for (int i = 1; i <= N; i++)
     {
@@ -147,6 +267,10 @@ void shellSort(int v[1 + NMAX], int h)
 
 
 void quickSortMedian3(int v[1 + NMAX], int left, int right){
+    if (N == 100000000 && maxValue < 10000){
+        cout << "Algoritmul nu poate efectua sortarea ";
+        return;
+    }
     if (left < right)
     {
         int mid = (left + right) / 2;
@@ -174,14 +298,17 @@ void stlSort(int v[1 + NMAX])
 {
     sort(v + 1, v + N + 1);
 }
+
 bool sortedCheck(int v[1 + NMAX])
 {
     for (int i = 1; i < N; i++)
-    {
         if (v[i] > v[i + 1])
-        {
             return 0;
-        }
-    }
     return 1;
+}
+
+void copiere(int v[1 + NMAX])
+{
+    for (int i = 1; i <= N; i++)
+        v[i] = v1[i];
 }

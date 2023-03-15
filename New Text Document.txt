@@ -86,6 +86,28 @@ T29 N = 10000000 MAX = 10000000 Timp: 2.25 sec  Sortare reusita
 T30 N = 10000000 MAX = 100000000 Timp: 2.25 sec  Sortare reusita
 T31 N = 100000000 MAX = 1000 Timp: 24.77 sec  Sortare reusita
 T32 N = 100000000 MAX = 10000 Timp: 25.398 sec  Sortare reusita
+MERGE SORT:
+T12 N = 10000 MAX = 100000000 Timp: sub 0.001 sec  Sortare reusita
+T13 N = 100000 MAX = 1000 Timp: 0.015 sec  Sortare reusita
+T14 N = 100000 MAX = 10000 Timp: 0.016 sec  Sortare reusita
+T15 N = 100000 MAX = 100000 Timp: 0.031 sec  Sortare reusita
+T16 N = 100000 MAX = 1000000 Timp: 0.016 sec  Sortare reusita
+T17 N = 100000 MAX = 10000000 Timp: 0.016 sec  Sortare reusita
+T18 N = 100000 MAX = 100000000 Timp: 0.016 sec  Sortare reusita
+T19 N = 1000000 MAX = 1000 Timp: 0.203 sec  Sortare reusita
+T20 N = 1000000 MAX = 10000 Timp: 0.234 sec  Sortare reusita
+T21 N = 1000000 MAX = 100000 Timp: 0.187 sec  Sortare reusita
+T22 N = 1000000 MAX = 1000000 Timp: 0.234 sec  Sortare reusita
+T23 N = 1000000 MAX = 10000000 Timp: 0.25 sec  Sortare reusita
+T24 N = 1000000 MAX = 100000000 Timp: 0.25 sec  Sortare reusita
+T25 N = 10000000 MAX = 1000 Timp: 2.187 sec  Sortare reusita
+T26 N = 10000000 MAX = 10000 Timp: 2.391 sec  Sortare reusita
+T27 N = 10000000 MAX = 100000 Timp: 2.422 sec  Sortare reusita
+T28 N = 10000000 MAX = 1000000 Timp: 2.437 sec  Sortare reusita
+T29 N = 10000000 MAX = 10000000 Timp: 2.422 sec  Sortare reusita
+T30 N = 10000000 MAX = 100000000 Timp: 2.422 sec  Sortare reusita
+T31 N = 100000000 MAX = 1000 Timp: 23.991 sec  Sortare reusita
+T32 N = 100000000 MAX = 10000 Timp: 24.909 sec  Sortare reusita
 
 SHELL SORT:
 
@@ -134,26 +156,5 @@ T30 N = 10000000 MAX = 100000000 Timp: 0.907 sec  Sortare reusita
 T31 N = 100000000 MAX = 1000 Timp: 5.642 sec  Sortare reusita
 T32 N = 100000000 MAX = 10000 Timp: 8.079 sec  Sortare reusita
 
-MERGE SORT:
-T12 N = 10000 MAX = 100000000 Timp: sub 0.001 sec  Sortare reusita
-T13 N = 100000 MAX = 1000 Timp: 0.015 sec  Sortare reusita
-T14 N = 100000 MAX = 10000 Timp: 0.016 sec  Sortare reusita
-T15 N = 100000 MAX = 100000 Timp: 0.031 sec  Sortare reusita
-T16 N = 100000 MAX = 1000000 Timp: 0.016 sec  Sortare reusita
-T17 N = 100000 MAX = 10000000 Timp: 0.016 sec  Sortare reusita
-T18 N = 100000 MAX = 100000000 Timp: 0.016 sec  Sortare reusita
-T19 N = 1000000 MAX = 1000 Timp: 0.203 sec  Sortare reusita
-T20 N = 1000000 MAX = 10000 Timp: 0.234 sec  Sortare reusita
-T21 N = 1000000 MAX = 100000 Timp: 0.187 sec  Sortare reusita
-T22 N = 1000000 MAX = 1000000 Timp: 0.234 sec  Sortare reusita
-T23 N = 1000000 MAX = 10000000 Timp: 0.25 sec  Sortare reusita
-T24 N = 1000000 MAX = 100000000 Timp: 0.25 sec  Sortare reusita
-T25 N = 10000000 MAX = 1000 Timp: 2.187 sec  Sortare reusita
-T26 N = 10000000 MAX = 10000 Timp: 2.391 sec  Sortare reusita
-T27 N = 10000000 MAX = 100000 Timp: 2.422 sec  Sortare reusita
-T28 N = 10000000 MAX = 1000000 Timp: 2.437 sec  Sortare reusita
-T29 N = 10000000 MAX = 10000000 Timp: 2.422 sec  Sortare reusita
-T30 N = 10000000 MAX = 100000000 Timp: 2.422 sec  Sortare reusita
-T31 N = 100000000 MAX = 1000 Timp: 23.991 sec  Sortare reusita
-T32 N = 100000000 MAX = 10000 Timp: 24.909 sec  Sortare reusita
+
 
