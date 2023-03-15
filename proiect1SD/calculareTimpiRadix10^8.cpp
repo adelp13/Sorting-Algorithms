@@ -9,15 +9,15 @@ using namespace std;
 ifstream in("tests.txt");
 const int NMAX = 100000000;
 short int v1[1 + NMAX], v2[1 + NMAX];
-const int EXP_MAX;
+const int EXP_MAX = 16;
 int N = 100000000;
-short int maxValue = 1000;
-const int exponent = 7;
+short int maxValue = 10000;
+int exponent = 7;
 
 vector <short int> buckets[1 << EXP_MAX];
 
 void radixSort(short int v[1 + NMAX], long long power){
-    if (maxValue > 32 767){
+    if (maxValue > 32767 || N > 100000000){
         cout << "Algoritmul nu poate efectua sortarea ";
         return;
     }
@@ -55,7 +55,7 @@ bool sortedCheck(short int v[1 + NMAX])
     }
     return 1;
 }
-void copiere(int v[1 + NMAX])
+void copiere(short int v[1 + NMAX])
 {
     for (int i = 1; i <= N; i++)
         v[i] = v1[i];
@@ -69,6 +69,7 @@ int main()
 
     exponent = 7;
     copiere(v2);
+    clock_t time;
     time = clock();
     radixSort(v2, 0);
     time = clock() - time;
@@ -87,7 +88,7 @@ int main()
     time = clock();
     radixSort(v2, 0);
     time = clock() - time;
-    cout << "\tRADIX: 2^10:";
+    cout << "\tRADIX 2^10:";
     if (float(time)/CLOCKS_PER_SEC == 0)
         cout << "sub 0.001 sec ";
     else

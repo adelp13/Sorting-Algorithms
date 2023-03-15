@@ -1,0 +1,315 @@
+T1 N = 1000 MAX = 1000:
+        STL: sub 0.001 sec
+        SHELL: sub 0.001 sec  Sortare reusita
+        COUNT: 0.001 sec  Sortare reusita
+        QUICK: sub 0.001 sec  Sortare reusita
+T2 N = 1000 MAX = 10000:
+        STL: sub 0.001 sec
+        SHELL: sub 0.001 sec  Sortare reusita                                                                                  
+	  MERGE: sub 0.001 sec  Sortare reusita
+        RADIX 2^7: 0.001 sec  Sortare reusita
+        RADIX 2^10:0.001 sec  Sortare reusita
+        RADIX 2^13: 0.003 sec  Sortare reusita
+        RADIX 2^16: 0.015 sec  Sortare reusita
+        QUICK: sub 0.001 sec  Sortare reusita
+T2 N = 1000 MAX = 10000:
+        STL: sub 0.001 sec
+        SHELL: sub 0.001 sec  Sortare reusita
+        COUNT: sub 0.001 sec  Sortare reusita
+        MERGE: sub 0.001 sec  Sortare reusita
+        RADIX 2^7: 0.001 sec  Sortare reusita
+        RADIX 2^10:0.001 sec  Sortare reusita
+        RADIX 2^13: 0.003 sec  Sortare reusita
+        RADIX 2^16: 0.01 sec  Sortare reusita
+        QUICK: sub 0.001 sec  Sortare reusita
+T3 N = 1000 MAX = 100000:
+        STL: sub 0.001 sec
+        SHELL: 0.007 sec  Sortare reusita
+        COUNT: 0.001 sec  Sortare reusita
+        MERGE: sub 0.001 sec  Sortare reusita
+        RADIX 2^7: sub 0.001 sec  Sortare reusita
+        RADIX 2^10:sub 0.001 sec  Sortare reusita
+        RADIX 2^13: sub 0.001 sec  Sortare reusita
+        RADIX 2^16: 0.015 sec  Sortare reusita
+        RADIX 2^16: 0.016 sec  Sortare reusita
+        QUICK: sub 0.001 sec  Sortare reusita
+T5 N = 1000 MAX = 10000000:
+        STL: 0.016 sec
+        SHELL: sub 0.001 sec  Sortare reusita
+        COUNT: 0.031 sec  Sortare reusita
+        MERGE: sub 0.001 sec  Sortare reusita
+        RADIX 2^7: sub 0.001 sec  Sortare reusita
+        RADIX 2^10:0.007 sec  Sortare reusita
+        RADIX 2^13: sub 0.001 sec  Sortare reusita
+        RADIX 2^16: 0.009 sec  Sortare reusita
+        QUICK: sub 0.001 sec  Sortare reusita
+T6 N = 1000 MAX = 100000000:
+        STL: sub 0.001 sec
+        SHELL: sub 0.001 sec  Sortare reusita
+        COUNT: 0.377 sec  Sortare reusita
+        MERGE: sub 0.001 sec  Sortare reusita
+        RADIX 2^7: sub 0.001 sec  Sortare reusita
+        RADIX 2^10:sub 0.001 sec  Sortare reusita
+        RADIX 2^13: sub 0.001 sec  Sortare reusita
+        RADIX 2^16: 0.015 sec  Sortare reusita
+        QUICK: sub 0.001 sec  Sortare reusita
+T7 N = 10000 MAX = 1000:
+        STL: sub 0.001 sec
+        SHELL: sub 0.001 sec  Sortare reusita
+        COUNT: sub 0.001 sec  Sortare reusita
+        MERGE: sub 0.001 sec  Sortare reusita
+        RADIX 2^7: sub 0.001 sec  Sortare reusita
+        RADIX 2^10:0.016 sec  Sortare reusita
+        RADIX 2^13: sub 0.001 sec  Sortare reusita
+        RADIX 2^16: 0.015 sec  Sortare reusita
+        QUICK: 0.016 sec  Sortare reusita
+T8 N = 10000 MAX = 10000:
+        STL: sub 0.001 sec
+        SHELL: sub 0.001 sec  Sortare reusita
+        COUNT: sub 0.001 sec  Sortare reusita
+        MERGE: sub 0.001 sec  Sortare reusita
+        RADIX 2^7: sub 0.001 sec  Sortare reusita
+        RADIX 2^10:0.016 sec  Sortare reusita
+        RADIX 2^13: 0.016 sec  Sortare reusita
+        RADIX 2^16: 0.031 sec  Sortare reusita
+        QUICK: sub 0.001 sec  Sortare reusita
+T9 N = 10000 MAX = 100000:
+        STL: sub 0.001 sec
+        SHELL: sub 0.001 sec  Sortare reusita
+        COUNT: sub 0.001 sec  Sortare reusita
+        MERGE: sub 0.001 sec  Sortare reusita
+        RADIX 2^7: 0.016 sec  Sortare reusita
+        RADIX 2^10:sub 0.001 sec  Sortare reusita
+        RADIX 2^13: 0.015 sec  Sortare reusita
+        RADIX 2^16: 0.032 sec  Sortare reusita
+        QUICK: sub 0.001 sec  Sortare reusita
+T10 N = 10000 MAX = 1000000:
+        STL: sub 0.001 sec
+        SHELL: sub 0.001 sec  Sortare reusita
+        COUNT: 0.015 sec  Sortare reusita
+        MERGE: sub 0.001 sec  Sortare reusita
+        RADIX 2^7: sub 0.001 sec  Sortare reusita
+        RADIX 2^10:sub 0.001 sec  Sortare reusita
+        RADIX 2^13: 0.016 sec  Sortare reusita
+        RADIX 2^16: 0.031 sec  Sortare reusita
+        QUICK: sub 0.001 sec  Sortare reusita
+T11 N = 10000 MAX = 10000000:
+        STL: sub 0.001 sec
+        SHELL: sub 0.001 sec  Sortare reusita
+        COUNT: 0.032 sec  Sortare reusita
+        MERGE: sub 0.001 sec  Sortare reusita
+        RADIX 2^7: sub 0.001 sec  Sortare reusita
+        RADIX 2^10:sub 0.001 sec  Sortare reusita
+        RADIX 2^13: 0.015 sec  Sortare reusita
+        RADIX 2^16: 0.031 sec  Sortare reusita
+        QUICK: sub 0.001 sec  Sortare reusita
+T12 N = 10000 MAX = 100000000:
+        STL: sub 0.001 sec
+        SHELL: 0.016 sec  Sortare reusita
+        COUNT: 0.252 sec  Sortare reusita
+        MERGE: sub 0.001 sec  Sortare reusita
+        RADIX 2^7: sub 0.001 sec  Sortare reusita
+        RADIX 2^10:sub 0.001 sec  Sortare reusita
+        RADIX 2^13: 0.015 sec  Sortare reusita
+        RADIX 2^16: 0.031 sec  Sortare reusita
+        QUICK: sub 0.001 sec  Sortare reusita
+T13 N = 100000 MAX = 1000:
+        STL: 0.032 sec
+        SHELL: 0.031 sec  Sortare reusita
+        COUNT: 0.016 sec  Sortare reusita
+        MERGE: 0.016 sec  Sortare reusita
+        RADIX 2^7: sub 0.001 sec  Sortare reusita
+        RADIX 2^10:sub 0.001 sec  Sortare reusita
+        RADIX 2^13: 0.016 sec  Sortare reusita
+        RADIX 2^16: 0.032 sec  Sortare reusita
+        QUICK: 0.031 sec  Sortare reusita
+T14 N = 100000 MAX = 10000:
+        STL: 0.023 sec
+        SHELL: 0.04 sec  Sortare reusita
+        COUNT: sub 0.001 sec  Sortare reusita
+        MERGE: 0.016 sec  Sortare reusita
+        RADIX 2^7: 0.016 sec  Sortare reusita
+        RADIX 2^10:sub 0.001 sec  Sortare reusita
+        RADIX 2^13: 0.031 sec  Sortare reusita
+        RADIX 2^16: 0.031 sec  Sortare reusita
+        QUICK: 0.031 sec  Sortare reusita
+T15 N = 100000 MAX = 100000:
+        STL: 0.017 sec
+        SHELL: 0.044 sec  Sortare reusita
+        COUNT: sub 0.001 sec  Sortare reusita
+        MERGE: 0.016 sec  Sortare reusita
+        RADIX 2^7: 0.016 sec  Sortare reusita
+        RADIX 2^10:0.015 sec  Sortare reusita
+        RADIX 2^13: 0.032 sec  Sortare reusita
+        RADIX 2^16: 0.078 sec  Sortare reusita
+        QUICK: 0.032 sec  Sortare reusita
+T16 N = 100000 MAX = 1000000:
+        STL: 0.015 sec
+        SHELL: 0.063 sec  Sortare reusita
+        COUNT: sub 0.001 sec  Sortare reusita
+        MERGE: 0.016 sec  Sortare reusita
+        RADIX 2^7: sub 0.001 sec  Sortare reusita
+        RADIX 2^10:0.016 sec  Sortare reusita
+        RADIX 2^13: 0.031 sec  Sortare reusita
+        RADIX 2^16: 0.096 sec  Sortare reusita
+        QUICK: 0.015 sec  Sortare reusita
+T17 N = 100000 MAX = 10000000:
+        STL: 0.031 sec
+        SHELL: 0.048 sec  Sortare reusita
+        COUNT: 0.031 sec  Sortare reusita
+        MERGE: 0.016 sec  Sortare reusita
+        RADIX 2^7: 0.016 sec  Sortare reusita
+        RADIX 2^10:0.016 sec  Sortare reusita
+        RADIX 2^13: 0.031 sec  Sortare reusita
+        RADIX 2^16: 0.094 sec  Sortare reusita
+        QUICK: 0.016 sec  Sortare reusita
+T18 N = 100000 MAX = 100000000:
+        STL: 0.015 sec
+        SHELL: 0.063 sec  Sortare reusita
+        COUNT: 0.251 sec  Sortare reusita
+        MERGE: 0.016 sec  Sortare reusita
+        RADIX 2^7: 0.016 sec  Sortare reusita
+        RADIX 2^10:0.015 sec  Sortare reusita
+        RADIX 2^13: 0.047 sec  Sortare reusita
+        RADIX 2^16: 0.063 sec  Sortare reusita
+        QUICK: 0.016 sec  Sortare reusita
+T19 N = 1000000 MAX = 1000:
+        STL: 0.173 sec
+        SHELL: 0.534 sec  Sortare reusita
+        COUNT: sub 0.001 sec  Sortare reusita
+        MERGE: 0.157 sec  Sortare reusita
+        RADIX 2^7: 0.095 sec  Sortare reusita
+        RADIX 2^10:0.062 sec  Sortare reusita
+        RADIX 2^13: 0.079 sec  Sortare reusita
+        RADIX 2^16: 0.095 sec  Sortare reusita
+        QUICK: 1.38 sec  Sortare reusita
+T20 N = 1000000 MAX = 10000:
+        STL: 0.172 sec
+        SHELL: 0.66 sec  Sortare reusita
+        COUNT: 0.016 sec  Sortare reusita
+        MERGE: 0.188 sec  Sortare reusita
+        RADIX 2^7: 0.11 sec  Sortare reusita
+        RADIX 2^10:0.11 sec  Sortare reusita
+        RADIX 2^13: 0.141 sec  Sortare reusita
+        RADIX 2^16: 0.141 sec  Sortare reusita
+        QUICK: 0.361 sec  Sortare reusita
+T21 N = 1000000 MAX = 100000:
+        STL: 0.188 sec
+        SHELL: 0.754 sec  Sortare reusita
+        COUNT: 0.006 sec  Sortare reusita
+        MERGE: 0.189 sec  Sortare reusita
+        RADIX 2^7: 0.11 sec  Sortare reusita
+        RADIX 2^10:0.079 sec  Sortare reusita
+        RADIX 2^13: 0.11 sec  Sortare reusita
+        RADIX 2^16: 0.189 sec  Sortare reusita
+        QUICK: 0.235 sec  Sortare reusita
+T22 N = 1000000 MAX = 1000000:
+        STL: 0.188 sec
+        SHELL: 0.704 sec  Sortare reusita
+        COUNT: 0.031 sec  Sortare reusita
+        MERGE: 0.189 sec  Sortare reusita
+        RADIX 2^7: 0.11 sec  Sortare reusita
+        RADIX 2^10:0.094 sec  Sortare reusita
+        RADIX 2^13: 0.126 sec  Sortare reusita
+        RADIX 2^16: 0.174 sec  Sortare reusita
+        QUICK: 0.252 sec  Sortare reusita
+T23 N = 1000000 MAX = 10000000:
+        STL: 0.172 sec
+        SHELL: 0.754 sec  Sortare reusita
+        COUNT: 0.047 sec  Sortare reusita
+        MERGE: 0.188 sec  Sortare reusita
+        RADIX 2^7: 0.11 sec  Sortare reusita
+        RADIX 2^10:0.079 sec  Sortare reusita
+        RADIX 2^13: 0.11 sec  Sortare reusita
+        RADIX 2^16: 0.204 sec  Sortare reusita
+        QUICK: 0.295 sec  Sortare reusita
+T24 N = 1000000 MAX = 100000000:
+        STL: 0.22 sec
+        SHELL: 0.769 sec  Sortare reusita
+        COUNT: 0.236 sec  Sortare reusita
+        MERGE: 0.188 sec  Sortare reusita
+        RADIX 2^7: 0.125 sec  Sortare reusita
+        RADIX 2^10:0.095 sec  Sortare reusita
+        RADIX 2^13: 0.11 sec  Sortare reusita
+        RADIX 2^16: 0.225 sec  Sortare reusita
+        QUICK: 0.301 sec  Sortare reusita
+T25 N = 10000000 MAX = 1000:
+        STL: 2.204 sec
+        SHELL: 6.754 sec  Sortare reusita
+        COUNT: 0.063 sec  Sortare reusita
+        MERGE: 2.042 sec  Sortare reusita
+        RADIX 2^7: 0.99 sec  Sortare reusita
+        RADIX 2^10:0.597 sec  Sortare reusita
+        RADIX 2^13: 0.691 sec  Sortare reusita
+        RADIX 2^16: 0.629 sec  Sortare reusita
+        QUICK: 109.378 sec  Sortare reusita
+T26 N = 10000000 MAX = 10000:
+        STL: 2.074 sec
+        SHELL: 10.49 sec  Sortare reusita
+        COUNT: 0.125 sec  Sortare reusita
+        MERGE: 2.047 sec  Sortare reusita
+        RADIX 2^7: 0.99 sec  Sortare reusita
+        RADIX 2^10:0.927 sec  Sortare reusita
+        RADIX 2^13: 1.037 sec  Sortare reusita
+        RADIX 2^16: 0.817 sec  Sortare reusita
+        QUICK: 12.906 sec  Sortare reusita
+T27 N = 10000000 MAX = 100000:
+        STL: 2.026 sec
+        SHELL: 11.207 sec  Sortare reusita
+        COUNT: 0.188 sec  Sortare reusita
+        MERGE: 2.073 sec  Sortare reusita
+        RADIX 2^7: 1.146 sec  Sortare reusita
+        RADIX 2^10:0.927 sec  Sortare reusita
+        RADIX 2^13: 1.194 sec  Sortare reusita
+        RADIX 2^16: 1.177 sec  Sortare reusita
+        QUICK: 5.541 sec  Sortare reusita
+T28 N = 10000000 MAX = 1000000:
+        STL: 2.121 sec
+        SHELL: 11.633 sec  Sortare reusita
+        COUNT: 0.235 sec  Sortare reusita
+        MERGE: 2.197 sec  Sortare reusita
+        RADIX 2^7: 1.255 sec  Sortare reusita
+        RADIX 2^10:0.895 sec  Sortare reusita
+        RADIX 2^13: 1.209 sec  Sortare reusita
+        RADIX 2^16: 1.193 sec  Sortare reusita
+        QUICK: 6.075 sec  Sortare reusita
+T29 N = 10000000 MAX = 10000000:
+        STL: 2.165 sec
+        SHELL: 12.037 sec  Sortare reusita
+        COUNT: 0.299 sec  Sortare reusita
+        MERGE: 2.275 sec  Sortare reusita
+        RADIX 2^7: 1.178 sec  Sortare reusita
+        RADIX 2^10:1.005 sec  Sortare reusita
+        RADIX 2^13: 1.115 sec  Sortare reusita
+        RADIX 2^16: 1.205 sec  Sortare reusita
+        QUICK: 5.861 sec  Sortare reusita
+T30 N = 10000000 MAX = 100000000:
+        STL: 2.041 sec
+        SHELL: 11.719 sec  Sortare reusita
+        COUNT: 0.564 sec  Sortare reusita
+        MERGE: 2.264 sec  Sortare reusita
+        RADIX 2^7: 1.272 sec  Sortare reusita
+        RADIX 2^10:0.878 sec  Sortare reusita
+        RADIX 2^13: 1.162 sec  Sortare reusita
+        RADIX 2^16: 1.156 sec  Sortare reusita
+        QUICK: 5.413 sec  Sortare reusita
+T31 N = 100000000 MAX = 1000:
+        STL: 25.902 sec
+        SHELL: 90.993 sec  Sortare reusita
+        COUNT: 0.643 sec  Sortare reusita
+        MERGE: 20.474 sec  Sortare reusita
+ 	  RADIX 2^7: 7.711 sec  Sortare reusita
+        RADIX 2^10:5.48 sec  Sortare reusita
+        RADIX 2^13: 5.307 sec  Sortare reusita
+        RADIX 2^16: 5.385 sec  Sortare reusita
+Algoritmul nu poate efectua sortarea    QUICK:  Vectorul nu a putut fi sortat
+T32 N = 100000000 MAX = 10000:
+        STL: 23.59 sec
+        SHELL: 162.845 sec  Sortare reusita
+        COUNT: 0.753 sec  Sortare reusita
+        MERGE: 23.26 sec  Sortare reusita
+	  RADIX 2^7: 8.154 sec  Sortare reusita
+        RADIX 2^10:7.924 sec  Sortare reusita
+        RADIX 2^13: 9.95 sec  Sortare reusita
+        RADIX 2^16: 8.268 sec  Sortare reusita
+Algoritmul nu poate efectua sortarea    QUICK:  Vectorul nu a putut fi sortat
