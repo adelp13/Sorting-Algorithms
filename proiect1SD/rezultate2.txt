@@ -2,10 +2,16 @@ T1 N = 1000 MAX = 1000:
         STL: sub 0.001 sec
         SHELL: sub 0.001 sec  Sortare reusita
         COUNT: 0.001 sec  Sortare reusita
+	  MERGE: sub 0.001 sec  Sortare reusita
+ 	  RADIX 2^7: 0.001 sec  Sortare reusita
+        RADIX 2^10:0.001 sec  Sortare reusita
+        RADIX 2^13: 0.003 sec  Sortare reusita
+        RADIX 2^16: 0.005 sec  Sortare reusita
         QUICK: sub 0.001 sec  Sortare reusita
 T2 N = 1000 MAX = 10000:
         STL: sub 0.001 sec
-        SHELL: sub 0.001 sec  Sortare reusita                                                                                  
+        SHELL: sub 0.001 sec  Sortare reusita  
+	  COUNT: 0.001 sec  Sortare reusita                                                                                
 	  MERGE: sub 0.001 sec  Sortare reusita
         RADIX 2^7: 0.001 sec  Sortare reusita
         RADIX 2^10:0.001 sec  Sortare reusita

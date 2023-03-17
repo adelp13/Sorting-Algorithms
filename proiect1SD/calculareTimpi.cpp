@@ -31,7 +31,6 @@ void stlSort(int v[1 + NMAX]);
 int main()
 {
     in >> t;
-    cout << 1;
     for (int i = 0; i < t; i++)
     {
 
@@ -219,6 +218,11 @@ void msort(int v[1 + NMAX], int left, int right)
 }
 
 void countSort(int v[1 + NMAX]){
+    if (maxValue > 1000000000)
+    {
+        cout << "Algoritmul nu poate efectua sortarea ";
+        return;
+    }
     int maxVal = 0;
     for(int i = 0; i < N; i++)
     {
@@ -284,7 +288,7 @@ void shellSort(int v[1 + NMAX], int h)
 
 
 void quickSortMedian3(int v[1 + NMAX], int left, int right){
-    if (N == 1000000000 && maxValue < 100000){
+    if (N == 100000000 && maxValue < 10000){
         cout << "Algoritmul nu poate efectua sortarea ";
         return;
     }
