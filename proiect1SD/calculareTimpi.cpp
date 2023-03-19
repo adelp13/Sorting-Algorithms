@@ -44,7 +44,7 @@ int main()
         cout << "T" << i + 1 << " N = " << N << " MAX = " << maxValue << ":\n";
 
         clock_t time;
-        /*
+
         time = clock();
         stlSort(v2);
         time = clock() - time;
@@ -171,7 +171,7 @@ int main()
             }
             else
                 cout << " Vectorul nu a putut fi sortat\n";
-        */
+
         copiere(v2);
         time = clock();
         quickSortMedian3(v2, 1, N);

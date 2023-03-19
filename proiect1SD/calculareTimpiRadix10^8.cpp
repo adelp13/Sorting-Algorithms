@@ -6,7 +6,7 @@
 #include <algorithm>
 using namespace std;
 
-ifstream in("tests.txt");
+ifstream in("teste2.txt");
 const int NMAX = 100000000;
 short int v1[1 + NMAX], v2[1 + NMAX];
 const int EXP_MAX = 16;
